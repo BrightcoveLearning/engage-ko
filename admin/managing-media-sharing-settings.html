@@ -1,0 +1,700 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>미디어 공유 설정 관리</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">브라이트코브 참여<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">언어 선택</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">기타 브라이트코브 문서</option>
+      
+        
+          <option value="https://support.brightcove.com">설명서 홈</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">브라이트코브 대상</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">브라이트코브 비콘</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">브라이트코브 캠페인</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">브라이트코브 참여</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">브라이트코브 소셜</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">비디오 클라우드 스튜디오</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">브라이트코브 플레이어 개발</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">비디오 클라우드 플랫폼 API</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">비디오 클라우드 디바이스 SDK</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">통합 및 CMS 커넥터</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">비디오 클라우드 일반 정보</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="지원"/> 고객 지원 문의</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="시스템 상태"/> 시스템 상태</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">홈</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/admin/">계정 관리</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">미디어 공유 설정 관리</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">홈</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">시작하기 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-system-requirements.html">브라이트코브 참여 시스템 요구 사항</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-training-videos.html">브라이트코브 참여 교육 비디오</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-mobile-app-exp.html">모바일 앱 경험 만들기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-web-exp.html">웹 경험 만들기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage.html">브라이트코브 참여 시작하기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage-trial.html">브라이트코브 참여 평가판 시작하기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-mobile-app.html">단계별 - 모바일 앱 환경 만들기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-web-exp.html">단계별 - 웹 경험 만들기</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/using-brightcove-engage-app.html">브라이트코브 참여 애플리케이션 사용</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/videos/index.html">비디오 관리 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/videos/adding-text-tracks-to-a-video.html">텍스트 트랙 추가</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/capturing-poster-and-thumbnail-images.html">포스터 및 축소판 이미지 캡처</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/configuring-video-availability.html">비디오 가용성 구성</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/creating-and-managing-playlists.html">재생 목록 만들기 및 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties.html">비디오 속성 편집</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties-using-quick-edit.html">빠른 편집으로 비디오 속성 편집</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/exporting-video-data.html">비디오 데이터 내보내기</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/managing-videos.html">비디오 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/how-to-search-for-videos.html">동영상 검색</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-poster-and-thumbnail-images.html">포스터 및 썸네일 이미지 업로드</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-videos.html">동영상 업로드</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/working-with-shared-videos.html">공유 비디오 작업하기</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/index.html">경험 만들기 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/experiences/adding-logo-mobile-app-experience.html">모바일 앱 경험 페이지에 로고 추가</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/adding-objects-web-experience-pages.html">웹 경험 페이지에 이미지, 텍스트 및 링크 추가</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/adding-videos-experience.html">경험에 동영상 추가</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/assigning-custom-domain-web-experience.html">웹 환경에 사용자 지정 도메인 할당</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-custom-domains-and-ssl.html">사용자 지정 도메인 및 SSL 구성</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-experience-settings.html">환경 설정 구성</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-single-sign-active-directory-federation-services.html">ADFS를 사용하여 단일 사인온 구성</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/controlling-access-experience.html">경험에 대한 액세스 제어</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-access-control-profiles.html">액세스 제어 프로파일 생성</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-and-managing-push-notifications.html">푸시 알림 생성</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-and-managing-experiences.html">경험 생성 및 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/using-experience-editor-customize-mobile-app-experience.html">모바일 앱 경험 사용자 지정</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/using-experience-editor-customize-web-experience.html">웹 환경 사용자 지정</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/editing-experience-details.html">경험 세부 정보 편집</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/managing-collections.html">컬렉션 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/managing-projects.html">프로젝트 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/overview-experience-templates.html">경험 템플릿 개요</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/previewing-publishing-mobile-app-experience.html">모바일 앱 환경 미리 보기 및 게시</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/previewing-publishing-web-experience.html">웹 환경 미리 보기 및 게시</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-web-experience-ssl.html">SSL을 사용한 웹 환경 보안</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-auth0.html">Auth0을 사용하여 환경 보호</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-passwordless.html">Auth0 암호를 사용하지 않고 환경 보호</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-okta.html">Okta를 사용한 경험 확보</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-pingone.html">PingOne을 사용하여 환경 보호</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/styling-mobile-app-experiences.html">모바일 앱 경험 스타일링</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/styling-web-experiences.html">웹 경험 스타일 지정</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/live/index.html">라이브 이벤트 관리 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/live/creating-and-managing-live-events-using-live-module.html">라이브 이벤트 생성 및 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/live/creating-video-clips.html">비디오 클립 만들기</a></li>
+                  
+                
+                  
+                    <li><a href="/live/viewing-live-event-info-control-room.html">제어실 사용</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html">애널리틱스 검토 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/reviewing-video-analytics.html">비디오 분석 검토</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html">계정 관리 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/managing-account-information.html">계정 정보 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-settings.html">계정 설정 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-media-sharing-settings.html">미디어 공유 설정 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-profile-information.html">프로파일 정보 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-users.html">사용자 관리</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-video-fields.html">비디오 필드 관리</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/index.html">릴리즈 노트 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020 </a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">지원 <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/brightcove-answer.html">브라이트코브 답변</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">브라이트코브 시스템 상태 페이지 보기</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">영업팀에 문의</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">지원 사례 열기</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="네비게이션 메뉴"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">페이지 내용</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="새 탭에서 열기" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>미디어 공유 설정 관리</h1>
+  <summary>이 항목에서는 미디어 공유 설정을 구성하는 방법에 대해 알아봅니다.</summary>
+  <section class="bcls-section">
+    <p>미디어 공유를 통해 게시자는 동영상을 한 번 업로드한 다음 다른 계정으로 동영상을 공유할 수 있습니다. 계정은 자신의 회사 계정 또는 다른 게시자의 계정일 수 있습니다. 그런 다음 공유 동영상을 다른 계정에서 독립적으로 사용할 수 있습니다. 미디어 공유 설정은 계정 간의 공유 관계를 관리하는 데 사용됩니다.</p>
+    <p>이 항목에서는 다음과 같은 용어를 사용합니다.</p>
+    <ul>
+      <li><strong>마스터</strong> - 원본 비디오를 생성 (업로드) 한 계정입니다. 마스터는 콘텐츠를 소유하고 있으며, 콘텐츠를 설정, 관리 및 제휴사에 제공할 책임이 있습니다.</li>
+      <li><strong>제휴사</strong> - 비디오를 수신하는 계정입니다. 제휴사는 마스터로부터 공유된 콘텐츠를 수락하거나 거부할 수 있습니다.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add_affiliates">제휴사 추가</h2>
+    <p>동영상을 다른 계정으로 공유하려면 제휴 계정을 추가해야 합니다. 제휴사는 동영상을 공유하려는 계정입니다. 제휴 계정을 추가하려면 다음과 같이 하십시오.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>브라이트코브 Engage™ 에 로그인합니다.</li>
+      <li>탐색 헤더에서 톱니 바퀴 아이콘 ()을 클릭하여 관리 메뉴를 엽니 다. <img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png"/> ) 그리고<strong>미디어 공유</strong> . 관리 메뉴에 액세스하려면 계정 관리자여야 합니다.</li>
+      <li>그만큼<strong>제휴사 관리-내가 동영상을 공유하는 계정</strong>섹션에는 귀하와 미디어 공유 관계를 설정 한 모든 제휴 게시자 (있는 경우) 목록이 표시됩니다.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/manage-affiliates.png"/></figure>
+      </li>
+      <li>새 제휴사를 추가하려면<strong>계정 ID</strong>텍스트 상자를 클릭 한 다음<strong>제휴사 추가</strong> .</li>
+    </ol>
+    <p><strong>관계 상태가</strong><strong>보류 중인</strong>테이블에 계정이 추가됩니다. 제휴사 계정은 미디어 공유 알림을 받고<a href="#accept_reject">관계를 수락하거나 거부할</a>수 있습니다. 제휴사가 미디어 공유 관계를 수락하면<strong>관계 상태가</strong><strong>수락됩니다</strong> .</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom_fields">사용자 정의 필드 일치</h2>
+    <p>제휴 계정에 마스터 계정과 동일한 사용자 지정 필드가 포함되도록 하려면<strong>사용자 지정 필드 일치 적용을</strong>선택한 다음<strong>규칙 업데이트를</strong>클릭합니다. <strong>사용자 지정 필드 일치 적용을</strong>선택한 경우 제휴 계정에 마스터 계정과 동일한 사용자 지정 필드가 있어야 합니다. 그렇지 않으면 공유가 실패합니다.</p>
+    <h3>참고</h3>
+    <ul>
+      <li>사용자 정의 필드 일치는 두 계정의 내부 사용자 정의 필드 이름이 일치하는지 확인합니다. 필드 유형 (목록 또는 텍스트) 은 중요하지 않습니다.</li>
+      <li>마스터 계정으로 정의된 채널이 사용자 지정 필드 일치를 적용하고 사용자 지정 필드가 있는 동영상을 제휴 계정에서 허용하지 않는 값으로 공유하는 경우 해당 공유 시도가 실패합니다.
+        </p>
+        <p>마스터 계정으로 정의된 채널이 사용자 정의 필드 일치를 적용하지 않고 사용자 정의 필드가 있는 동영상을 제휴사 계정에서 허용하지 않는 값으로 공유하는 경우 공유 시도가 작동하지만 잘못된 값을 가진 필드는 비디오의 제휴 복사본에 포함되지 않습니다.</p>
+      </li>
+      <li>마스터 계정의 공유 비디오가 지역 필터링으로 구성된 경우 제휴사 계정도 지역 필터링을 사용하도록 설정해야 합니다. 그렇지 않으면 공유가 실패합니다. 공유 동영상에 구성된 모든 지역 필터링은 제휴 계정에도 적용됩니다.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="remove_affiliates">계열사 제거</h2>
+    <p>제휴 계정을 제거하려면 제거 할 계정을 찾아 제거 아이콘 ( <img alt="" src="/assets/images/admin/delete-icon.png"/> ). 공유 관계를 종료할 것인지 확인하는 대화 상자가 나타납니다.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/end-sharing.png"/></figure>
+    <p><strong>공유 종료를</strong>클릭하여 공유 관계를 종료합니다.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="accept_reject">미디어 공유 관계 승인/거부</h2>
+    <p>다른 Brightcove 계정이 귀하의 계정을 제휴사로 추가 한 경우 (귀하의 계정에 비디오를 공유하려는 경우) 메시지가 표시됩니다. <strong>미디어 공유</strong>관리 페이지에 액세스합니다 (톱니 바퀴 아이콘 ( <img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png"/> ) 그리고<strong>미디어 공유</strong> ).</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/approve-sharing.png"/></figure>
+    <p><strong>사용자 지정 필드 일치 적용을</strong>선택한 경우 제휴 계정에 마스터 계정과 동일한 사용자 지정 필드가 있어야 합니다. 그렇지 않으면 공유가 실패합니다.</p>
+    <p>미디어 공유 관계를<strong>거부하려면</strong> [거부] 를 클릭합니다. 그렇지 않으면<strong>수락 모드를</strong>선택합니다.</p>
+    <ul>
+      <li><strong>자동</strong> - 이 마스터 계정의 공유 동영상을 항상 수락합니다. 공유 된 동영상은<strong>동영상</strong>페이지.</li>
+      <li><strong>수동</strong> - 미디어 라이브러리에 추가하기 전에 이 마스터 계정의 공유 비디오를 검토합니다. 그만큼<strong>동영상</strong>페이지에<strong>보류중인 주식</strong>왼쪽 탐색의 항목.</li>
+    </ul>
+    <p><strong>승인을</strong>클릭하여 미디어 공유 관계를 승인합니다. 관계가 승인되면 페이지의<strong>마스터 관리</strong>섹션에 나타납니다.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/manage-masters.png"/></figure>
+    <p>미디어 공유 설정을<strong>보려면 계약</strong>보기를 누릅니다. 공유 관계를 제거하려면 제거 아이콘 ( <img alt="" src="/assets/images/admin/delete-icon.png"/> ) 을 클릭합니다.</p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">페이지 내용</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  10월 202020일에 마지막으로 업데이트 된 페이지
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>브라이트코브 지원</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">시스템 상태</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">고객 지원 문의</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">문서화</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>교육</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">온라인 강좌</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">강좌 등록</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">브라이트코브 대학교</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">브라이트코브닷컴</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">연락처</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 브라이트코브 Inc. 모든 판권 소유.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">개인 정보 보호</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">이용 약관</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(2, 28, 146);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">궁금한 사항이 있으십니까? </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
