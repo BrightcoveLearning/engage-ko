@@ -1,0 +1,162 @@
+- section: 
+  name: 홈
+  url: /index.html
+- section: 
+  name: 시작하기
+  url: /get-started/index.html
+  docs:
+    - name: Brightcove Engage 시스템 요구 사항
+      url: /get-started/brightcove-engage-system-requirements.html
+    - name: 브라이트코브 인게이지교육 비디오
+      url: /get-started/brightcove-engage-training-videos.html
+    - name: 모바일 앱 경험 만들기
+      url: /get-started/overview-create-edit-publish-mobile-app-exp.html
+    - name: 웹 경험 만들기
+      url: /get-started/overview-create-edit-publish-web-exp.html
+    - name: Brightcove Engage 시작하기
+      url: /get-started/getting-started-brightcove-engage.html
+    - name: Brightcove Engage 평가판 시작하기
+      url: /get-started/getting-started-brightcove-engage-trial.html
+    - name: 단계별 - 모바일 앱 경험 만들기
+      url: /get-started/step-by-step-mobile-app.html
+    - name: 단계별 - 웹 경험 만들기
+      url: /get-started/step-by-step-web-exp.html
+    - name: Brightcove Engage 애플리케이션 사용
+      url: /get-started/using-brightcove-engage-app.html
+- section: 
+  name: 비디오 관리
+  url: /videos/index.html
+  docs:
+    - name: 텍스트 트랙 추가
+      url: /videos/adding-text-tracks-to-a-video.html
+    - name: 포스터 및 축소판 이미지 캡처
+      url: /videos/capturing-poster-and-thumbnail-images.html
+    - name: 비디오 가용성 구성
+      url: /videos/configuring-video-availability.html
+    - name: 재생 목록 생성 및 관리
+      url: /videos/creating-and-managing-playlists.html
+    - name: 비디오 속성 편집
+      url: /videos/editing-video-properties.html
+    - name: 빠른 편집으로 비디오 속성 편집
+      url: /videos/editing-video-properties-using-quick-edit.html
+    - name: 비디오 데이터 내보내기
+      url: /videos/exporting-video-data.html
+    - name: 비디오 관리
+      url: /videos/managing-videos.html
+    - name: 비디오 검색
+      url: /videos/how-to-search-for-videos.html
+    - name: 포스터 및 썸네일 이미지 업로드
+      url: /videos/uploading-poster-and-thumbnail-images.html
+    - name: 동영상 업로드
+      url: /videos/uploading-videos.html
+    - name: 공유 비디오 작업하기
+      url: /videos/working-with-shared-videos.html
+- section: 
+  name: 경험 창출
+  url: /experiences/index.html
+  docs:
+    - name: 모바일 앱 경험 페이지에 로고 추가하기
+      url: /experiences/adding-logo-mobile-app-experience.html
+    - name: 웹 경험 페이지에 이미지, 텍스트 및 링크 추가
+      url: /experiences/adding-objects-web-experience-pages.html
+    - name: 경험에 비디오 추가
+      url: /experiences/adding-videos-experience.html
+    - name: 웹 경험에 사용자 지정 도메인 할당
+      url: /experiences/assigning-custom-domain-web-experience.html
+    - name: 사용자 지정 도메인 및 SSL 구성
+      url: /experiences/configuring-custom-domains-and-ssl.html
+    - name: 경험 설정 구성
+      url: /experiences/configuring-experience-settings.html
+    - name: ADFS로 Single Sign-On 구성
+      url: /experiences/configuring-single-sign-active-directory-federation-services.html
+    - name: 경험에 대한 액세스 제어
+      url: /experiences/controlling-access-experience.html
+    - name: 액세스 제어 프로필 생성
+      url: /experiences/creating-access-control-profiles.html
+    - name: 푸시 알림 생성
+      url: /experiences/creating-and-managing-push-notifications.html
+    - name: 경험 생성 및 관리
+      url: /experiences/creating-and-managing-experiences.html
+    - name: 모바일 앱 경험 사용자 지정
+      url: /experiences/using-experience-editor-customize-mobile-app-experience.html
+    - name: 웹 경험 사용자 지정
+      url: /experiences/using-experience-editor-customize-web-experience.html
+    - name: 경험 세부 사항 편집
+      url: /experiences/editing-experience-details.html
+    - name: 컬렉션 관리
+      url: /experiences/managing-collections.html
+    - name: 프로젝트 관리
+      url: /experiences/managing-projects.html   
+    - name: 경험 템플릿 개요
+      url: /experiences/overview-experience-templates.html
+    - name: 모바일 앱 경험 미리보기 및 게시
+      url: /experiences/previewing-publishing-mobile-app-experience.html
+    - name: 웹 경험 미리보기 및 게시
+      url: /experiences/previewing-publishing-web-experience.html
+    - name: SSL로 웹 경험 보호
+      url: /experiences/securing-web-experience-ssl.html
+    - name: Auth0를 사용하여 경험 보호
+      url: /experiences/securing-experiences-auth0.html
+    - name: Auth0 Passwordless를 사용하여 경험 보호
+      url: /experiences/securing-experiences-passwordless.html
+    - name: Okta를 사용한 경험 확보
+      url: /experiences/securing-experiences-okta.html
+    - name: PingOne을 사용한 경험 보호
+      url: /experiences/securing-experiences-pingone.html
+    - name: 모바일 앱 경험 스타일링
+      url: /experiences/styling-mobile-app-experiences.html
+    - name: 웹 경험 스타일링
+      url: /experiences/styling-web-experiences.html
+- section: 
+  name: 라이브 이벤트 관리
+  url: /live/index.html
+  docs:
+    - name: 라이브 이벤트 생성 및 관리
+      url: /live/creating-and-managing-live-events-using-live-module.html
+    - name: 비디오 클립 만들기
+      url: /live/creating-video-clips.html
+    - name: 제어실 사용
+      url: /live/viewing-live-event-info-control-room.html
+- section: 
+  name: 분석 검토
+  url: /analytics/index.html
+  docs:
+    - name: 비디오 분석 검토
+      url: /analytics/reviewing-video-analytics.html
+- section: 
+  name: 계정 관리
+  url: /admin/index.html
+  docs:
+    - name: 계정 정보 관리
+      url: /admin/managing-account-information.html
+    - name: 계정 설정 관리
+      url: /admin/managing-account-settings.html
+    - name: 미디어 공유 설정 관리
+      url: /admin/managing-media-sharing-settings.html
+    - name: 프로필 정보 관리
+      url: /admin/managing-profile-information.html
+    - name: 사용자 관리
+      url: /admin/managing-users.html
+    - name: 비디오 필드 관리
+      url: /admin/managing-video-fields.html
+- section: 
+  name: 릴리스 노트
+  url: /release-notes/index.html
+  docs:
+    - name: 2020 년
+      url: /release-notes/2020.html
+- section: 
+  name: 지원
+  url: /support/index.html
+  docs:
+    - name: '브라이트코브 시스템 상태 페이지 보기'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: '영업 담당자'
+      url: '/support/contact-sales.html'
+    - name: '지원 사례 열기'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: '지원 포털 암호 재설정'
+      url: '/support/reset-support-portal-password.html'
+# TODO correct and add additional sections/pages
+# TODO note that the order of items here determines the order in navigation
+# TODO indentation in YAML is crucial and must be with spaces (not tabs!)
